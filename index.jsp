@@ -10,7 +10,7 @@
 
   try {
     Class.forName("com.mysql.jdbc.Driver");
-    Connection koneksi = DriverManager.getConnection("jdbc:mysql://localhost/db_quiz_pjr", "root", "Kipasangin123");
+    Connection koneksi = DriverManager.getConnection("jdbc:mysql://localhost/db_quiz_pjr", "root", "password");
     Statement stm = koneksi.createStatement();
 
     String sql = "SELECT * FROM tb_quiz WHERE status = 1 ORDER BY hits DESC LIMIT 4";
